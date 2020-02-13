@@ -1,5 +1,5 @@
 ---
-title: "`r renderText({input$drug})`"
+title: "Adverse events"
 runtime: shiny
 output: html_document
 ---
@@ -27,7 +27,6 @@ create_age <- function(min, max){#
 
 
 ```{r inputs, echo = FALSE}
-
 textInput('drug', 'Brand Name Drug', value = "Prednisone")
 
 sliderInput('ages', 'Age Range', min = 10, max = 80, value = c(20,60))
